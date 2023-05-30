@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+body{
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+main{
+    display:flex;
+    width:780px;
+    height:430px;
+    background: white;
+    border-radius: 20px;
+}
+.container1{
+    width:360px;
+    position: relative;
+    overflow: hidden;
+}
+.container2{
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding:50px;
+}
+#arrow{
+    height:8px;
+    margin-top:5px;
+    margin-left:60px;
+}
+hr{
+    opacity:0.3;
+}
+h1{
+    margin-bottom:20px;
+}
+p{
+    font-size:13px;
+}
+.subDiv{
+    display:flex;
+    justify-content: space-between;
+}
+.subDiv:hover{
+    color:hsl(14, 88%, 65%);
+    cursor:pointer;
+}
+.subDiv:target{
+    font-weight:600;
+    color:black;
+}
+.membersAnswer, .maxFileAnswer, .passAnswer, .subAnswer, .addSuppAnswer{
+    font-size:13px;
+    margin-top:5px;
+    opacity:0.7;
+}
+#imgWoman{
+    width:400px;
+}
+#imgDesk{
+    width:800px;
+}
+#imgBox{
+    width:158px;
+}
+.patDesk{
+    position: absolute;
+    right:12%;
+    bottom:-27%;
+    z-index: 0;
+}
+.woman{
+    position:absolute;
+    right:13%;
+    top:13%;
+    z-index: 1;
+}
+.box{
+    position:fixed;
+    bottom:32%;
+    left:15%;
+    z-index: 2;
+}
+
+@media(max-width:1300px){
+    body{
+        padding-top:50px;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        width:330px;
+        height: fit-content;
+    }
+    h1{
+        text-align: center;
+    }
+    .container1{
+        min-height: 100px;
+        position: relative;
+        overflow:visible
+    }
+    .container2{
+        padding:20px;
+        display: flex;
+    }
+    #imgWoman{
+         width:200px;
+    }
+    .woman{
+        position: absolute;
+        top:-90%;
+        left:17%;
+    }
+    #imgDesk{
+        width:210px;
+    }
+    .patDesk{
+        position:absolute;
+        left:17%;
+        top:-110%;
+    }
+    #imgBox{
+        width:70px;
+    }
+    .box{
+        position: absolute;
+        top:-30%;
+    }
+    hr{
+        margin-bottom:10px;
+        margin-top: 10px;
+    }
+}
